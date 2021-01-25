@@ -203,7 +203,7 @@ public class MessageUtils
     }
 
     /**
-     * Get the terminal width or 0 if the width can not be determined.
+     * Get the terminal width or -1 if the width cannot be determined.
      *
      * @return the terminal width
      */
