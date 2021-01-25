@@ -211,11 +211,12 @@ public class MessageUtils
     {
         if ( JANSI )
         {
-            return AnsiConsole.getTerminalWidth();
+            int width = AnsiConsole.getTerminalWidth();
+            return width > 0 ? width : -1;
         }
         else
         {
-            return 0;
+            return -1;
         }
     }
 }
